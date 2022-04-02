@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Узнай погоду!"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/head"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название города"
+        android:id="@+id/city"
+        app:layout_constraintTop_toBottomOf="@id/head"
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Запросить погоду"
+        android:id="@+id/request"
+        app:layout_constraintTop_toBottomOf="@id/city"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/response"
+        app:layout_constraintTop_toBottomOf="@id/request"
+        android:layout_margin="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
